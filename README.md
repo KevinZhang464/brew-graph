@@ -38,3 +38,8 @@ You can use the [yEd][1] graph editor to visualize GraphML markup. The created m
 
 [1]: http://www.yworks.com/en/products_yed_about.html
 [2]: http://blog.jpalardy.com/posts/untangling-your-homebrew-dependencies
+
+```bash
+brew graph --installed --highlight-leaves | fdp -Tpng -ograph.png
+brew graph --installed --highlight-leaves | dot -Tpng -ograph.png
+```
