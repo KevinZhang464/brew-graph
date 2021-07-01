@@ -12,5 +12,7 @@ brew install brew-graph
 ```bash
 brew install graphviz
 brew graph --installed | dot -Tpng -ograph.png
+brew graph --installed --highlight-leaves | fdp -Tpng -ograph.png
+brew graph --installed --highlight-leaves | dot -Tpng -ograph.png
 open graph.png
 ```
